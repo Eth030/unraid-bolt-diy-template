@@ -14,7 +14,7 @@ This repository provides a **Community App Template** for Unraid to easily deplo
    - Click on **Install**.
    - Paste the following URL:
      ```
-     https://raw.githubusercontent.com/[YOUR_GITHUB_USER]/[YOUR_REPO]/main/template.xml
+     https://raw.githubusercontent.com/Eth030/unraid-bolt-diy-template/main/template.xml
      ```
    - Click **Install**.
 
