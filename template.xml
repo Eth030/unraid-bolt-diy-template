@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>BoltDIY</Name>
+  <Name>boltdiy</Name>
   <Repository>ghcr.io/stackblitz-labs/bolt.diy:latest</Repository>
   <Registry>https://ghcr.io</Registry>
   <Network>bridge</Network>
@@ -12,8 +12,8 @@
   </Overview>
   <Category>Utility</Category>
   <WebUI>http://[IP]:[PORT:8181]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/Eth030/unraid-bolt-diy-template/main/template.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/Eth030/unraid-bolt-diy-template/main/icon.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/eth030/unraid-bolt-diy-template/main/template.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/eth030/unraid-bolt-diy-template/main/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <Config>
