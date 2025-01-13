@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>BoltDIY</Name>
+  <Repository>ghcr.io/stackblitz-labs/bolt.diy:latest</Repository>
+  <Registry>https://ghcr.io</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/stackblitz-labs/bolt.diy/issues</Support>
+  <Project>https://github.com/stackblitz-labs/bolt.diy</Project>
+  <Overview>
+    Bolt DIY is a lightweight, open-source framework for building and running web applications and APIs. This template simplifies its deployment on Unraid.
+  </Overview>
+  <Category>Utility</Category>
+  <WebUI>http://[IP]:[PORT:8181]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Eth030/unraid-bolt-diy-template/main/template.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Eth030/unraid-bolt-diy-template/main/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <Config>
+    <Volume Type="Path" Name="data" Target="/app/data" Default="/mnt/user/appdata/boltdiy" Mode="rw" Description="Storage location for Bolt DIY application data."/>
+  </Config>
+  <Environment>
+    <Variable Name="TZ" Value="Europe/Berlin" Mode="" Description="Timezone (e.g., Europe/Berlin)."/>
+  </Environment>
+  <Ports>
+    <Port Host="8181" Container="80" Protocol="tcp" Description="WebUI Port"/>
+  </Ports>
+</Container>
