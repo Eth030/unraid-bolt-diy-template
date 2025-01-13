@@ -1,28 +1,36 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>BoltDIY</Name>
-  <Repository>ghcr.io/stackblitz-labs/bolt.diy:latest</Repository>
-  <Registry>https://ghcr.io</Registry>
-  <Network>bridge</Network>
+  <Name>boltdiy</Name>
+  <Repository>ghcr.io/stackblitz-labs/bolt.diy</Repository>
+  <Network>eth0dock</Network>
   <MyIP/>
-  <Shell>bash</Shell>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/stackblitz-labs/bolt.diy/issues</Support>
-  <Project>https://github.com/stackblitz-labs/bolt.diy</Project>
-  <Overview>
-    Bolt DIY is a lightweight, open-source framework for building and running web applications and APIs. This template simplifies its deployment on Unraid.
-  </Overview>
-  <Category>Utility</Category>
-  <WebUI>http://[IP]:[PORT:8181]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/eth030/unraid-bolt-diy-template/main/template.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/eth030/unraid-bolt-diy-template/main/icon.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DonateText/>
-  <DonateLink/>
-  <Requires/>
-  <Config Name="WebUI" Target="80" Default="8181" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8181</Config>
-  <Config Name="Data" Target="/app/data" Default="/mnt/user/appdata/boltdiy" Mode="rw" Description="Storage location for Bolt DIY application data." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/boltdiy</Config>
-  <Config Name="TZ" Target="TZ" Default="Europe/Berlin" Mode="" Description="Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Berlin</Config>
+  <Support>https://github.com/stackblitz/labs</Support>
+  <Overview>This is a bolt DIY container</Overview>
+  <Category>Tools:Other</Category>
+  <Environment>
+    <Variable>
+      <Name>TZ</Name>
+      <Value>Europe/Berlin</Value>
+    </Variable>
+    <Variable>
+      <Name>HOST_OS</Name>
+      <Value>Unraid</Value>
+    </Variable>
+    <Variable>
+      <Name>HOST_HOSTNAME</Name>
+      <Value>Tower</Value>
+    </Variable>
+    <Variable>
+      <Name>HOST_CONTAINERNAME</Name>
+      <Value>boltdiy</Value>
+    </Variable>
+  </Environment>
+  <Labels>
+    <Label>
+      <Name>net.unraid.docker.managed</Name>
+      <Value>dockerman</Value>
+    </Label>
+  </Labels>
 </Container>
